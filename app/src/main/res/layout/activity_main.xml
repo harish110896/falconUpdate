@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:id="@+id/svTestList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnRemoveTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REMOVE TIME"/>
+            <TextView
+                android:id="@+id/tvLocalTimeMilli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milliseconds"
+                android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAKE PHOTO"/>
+            <Button
+                android:id="@+id/btnScreenCapture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SCREEN CAPTURE"/>
+            <Button
+                android:id="@+id/btnRlLoader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RlLoader"/>
+            <Button
+                android:id="@+id/btnCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer"/>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/customerCard"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Orders done"/>
+                    <RelativeLayout
+                        android:id="@+id/llProgressText"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:id="@+id/tvProgressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="56/100"/>
+                    </RelativeLayout>
+
+                    <!--<com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                        android:id="@+id/progressStatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:rcBackgroundColor="@color/colorPrimary"
+                        app:rcBackgroundPadding="2dp"
+                        app:rcMax="100"
+                        app:rcProgress="50"
+                        app:rcProgressColor="@color/colorAccent"
+                        app:rcRadius="0dp" />-->
+                        <ProgressBar
+                            android:id="@+id/pbGraph"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="5dp"
+                            android:max="100"
+                            android:minHeight="100dp"
+                            android:progress="10"
+                            android:progressDrawable="@drawable/pb_dashboard_progress" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ic_launcher_background"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5 compared to last thursday"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivCaptureImage"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

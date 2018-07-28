@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "525591765387",
+    "firebase_url": "https://fcm-implementation-7a7e7.firebaseio.com",
+    "project_id": "fcm-implementation-7a7e7",
+    "storage_bucket": "fcm-implementation-7a7e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525591765387:android:03c8342ca44169cb",
+        "android_client_info": {
+          "package_name": "com.example.apple.imagecapture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525591765387-pkrjvr6p7jaer3oth2fkht38gl9k2se9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apple.imagecapture",
+            "certificate_hash": "f5abed2778c009936a6958e481f9068fdcc0218a"
+          }
+        },
+        {
+          "client_id": "525591765387-f675sdd7k2qco42cto6snugkvdngn5eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqA0Yy4IGpfySv4YMUubD11HHy1iClFsE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525591765387-f675sdd7k2qco42cto6snugkvdngn5eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

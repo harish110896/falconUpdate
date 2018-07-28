@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ImageCapture</string>
+    <string name="notifications_admin_channel_name">Notification admin channel name</string>
+    <string name="notifications_admin_channel_description">Notification admin channel description</string>
+</resources>
